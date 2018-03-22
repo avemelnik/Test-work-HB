@@ -1,5 +1,5 @@
 <div>
-    <p>Скачай чек-лист, чтобы:</p>
+    <p class="ul-download-title">Скачай чек-лист, чтобы:</p>
     <ul class="do-list">
         <li><span>избежать впустую потраченного времени сохранить личный и реклам</span></li>
         <li><span>сохранить личный и рекламный бюджет от «слива»</span></li>
@@ -8,20 +8,22 @@
     </ul>
     <button type="button" class="btn btn-want btn-toggle" value="">Я ХОЧУ СКАЧАТЬ ЧЕК-ЛИСТ И СОВЕРШИТЬ ПРОРЫВ</button>
     <form class="form" method="post" action="">
-        <div class="d-flex justify-content-between p-2">
+        <div class="d-flex justify-content-between p-2 input-section">
         <input type="email" placeholder="Email" name="mail">
         <input type="tel" placeholder="Номер телефона" name="phone">
         </div>
-        <Button type="submit" class="btn-want btn-download text-center" value="Скачать">Скачать</Button>
-        <script>
-            $('.form').submit(function(event) {
-                event.preventDefault();
-                $.ajax({/* ... */}).done(function(result) {
-                    // переход
-                    window.location.href = "/ok/";
+        <Button type="submit" class="btn-want btn-download text-center">Скачать
+            <script>
+                $('.form').submit(function(event) {
+                    event.preventDefault();
+                    $.ajax({/* ... */}).done(function(result) {
+                        // переход
+                        window.location.href = "/ok/";
+                    });
                 });
-            });
-        </script>
+            </script>
+        </Button>
+
 
     </form>
 </div>
