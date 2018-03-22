@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div id="main" role="main" class="container">
+    <div class="ready text-center">{{ site.page-title-second }}</div>
+    <p class="about-list">Этот чек-лист поможет тебе оценить текущее состояние твоего маркетинга, исправить ошибки и совершить настоящий прорыв
+        в 2018 году.</p>
+    <div class="container row info-post">
+        <div class="col-12 col-lg-5 col-xl-5 note">
+            {% include note.html %}
+        </div>
+        <div class="col-12 col-lg-6 col-xl-6 offset-lg-1 ">
+            {% include doit.html %}
+        </div>
+    </div>
+    {% include form.html %}
+    <script>
+        $(".btn-toggle").on("click", function () {
+                $(".form").toggleClass("form-show");
+            }
+        );
+
+    </script>
+</div>

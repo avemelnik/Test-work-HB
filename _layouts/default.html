@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper container d-flex flex-column align-content-between align-items-between justify-content-between">
+    <header class="text-center">
+        <h1 class="desk">{{ site.description }}</h1>
+        <img src="../img/logo.png" alt="logo-img" class="img-fluid">
+    </header>
+
+    <main id="main" role="main" class="">
+        {{content}}
+    </main>
+
+    <footer class="footer d-flex flex-column w-100 justify-content-between align-content-center  align-items-center">
+        <div class="row align-content-center">
+        <div class="col-12 col-lg-4 d-flex justify-content-center">{% include vk-plug.html %}</div>
+        <div class="col-12 col-lg-4 d-flex align-items-center flex-column justify-content-center">{% include fb-plug.html %}</div>
+        <div class="col-12 col-lg-4 info  align-items-center d-flex flex-column justify-content-center">
+
+            <p>ok@nickvorobiov.com</p>
+
+            <p>ООО Реальность
+                г. Санкт-Петербург, ул. Некрасова 40</p>
+
+            <a href="#">Политика конфиденциальности</a>
+
+            <p>+7 (499) 112-47-92</p>
+        </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
