@@ -74,6 +74,9 @@
   background-color: #ffffff;
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.13) 0%, rgba(173, 173, 173, 0.13) 100%);
   padding-bottom: 50px; }
+  @media (max-width: 992px) {
+    .note {
+      margin-bottom: 30px; } }
 
 .note:before {
   content: url("../img/clip.png");
